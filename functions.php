@@ -196,4 +196,25 @@ function remove_open_sans() {
 }
 add_action('wp_print_styles','remove_open_sans');
 
+/*Удаляем часть стандартных виджетов*/
+function remove_default_widget() {
+	unregister_widget('WP_Widget_Archives'); // Архивы
+	unregister_widget('WP_Widget_Calendar'); // Календарь
+	unregister_widget('WP_Widget_Categories'); // Рубрики
+	unregister_widget('WP_Widget_Meta'); // Мета
+	unregister_widget('WP_Widget_Pages'); // Страницы
+	unregister_widget('WP_Widget_Recent_Comments'); // Свежие комментарии
+	unregister_widget('WP_Widget_Recent_Posts'); // Свежие записи
+	unregister_widget('WP_Widget_RSS'); // RSS
+	unregister_widget('WP_Widget_Search'); // Поиск
+}
+add_action( 'widgets_init', 'remove_default_widget', 20 );
+
+/*Убираем сайдбары домашней страницы*/
+function st_remove_sidebar(){
+    unregister_sidebar( 'sidebar-2' );
+    unregister_sidebar( 'sidebar-3' );
+}
+add_action( 'widgets_init', 'st_remove_sidebar', 11 );
+
 ?>
