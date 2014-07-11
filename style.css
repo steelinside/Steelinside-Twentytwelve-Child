@@ -1323,12 +1323,10 @@ footer.entry-meta,footer.entry-meta a {
 
 #dwnld_btn:before {
     float:left;
-    overflow:hidden;
     margin-right:.65em;
-    width:24px;
+    width:20px;
     height:20px;
-    background-image:url('images/icons.svg');
-    background-position:91% 0;
+    background-image:url('images/arrow.svg');
     background-size:auto 20px;
     background-repeat:no-repeat;
     content:'';
@@ -1461,110 +1459,6 @@ footer.entry-meta,footer.entry-meta a {
 .footer-columns:first-child {
     padding-left:0;
     border-left:none;
-}
-
-a.icons {
-    position:relative;
-    display:inline-block;
-    float:left;
-    margin-right:5px;
-    padding-left:20px;
-    text-decoration:none;
-    line-height:1.25em;
-}
-
-a.icons::before {
-    position:absolute;
-    top:0;
-    left:0;
-    width:17px;
-    height:20px;
-    background-image:url('images/icons.svg');
-    background-size:auto 15px;
-    background-repeat:no-repeat;
-    content:'';
-    opacity:.5;
-}
-
-.icon {
-    position:absolute;
-    margin-right:10px;
-    width:18px;
-    height:18px;
-    background-image:url("images/icons.svg");
-    background-size:auto 15px;
-    background-repeat:no-repeat;
-    line-height:1.25em;
-    opacity:0.7;
-}
-
-a.links::before {
-    background-position:50% .3em;
-}
-
-a.facebook::before {
-    background-position:18% 0;
-}
-
-a.skype::before {
-    background-position:59% 0;
-}
-
-a.email::before {
-    background-position:9% 0;
-}
-
-a.phone::before {
-    background-position:26% 0;
-}
-
-a.twitter::before {
-    background-position:34% 0;
-}
-
-a.gplus::before {
-    background-position:42% 0;
-}
-
-.twitter {
-    background-position:37% 0;
-}
-
-.phone {
-    background-position:28% 0;
-}
-
-.rss {
-    background-position:64% 0;
-}
-
-.rss-email {
-    background-position:11% 0;
-}
-
-.date {
-    background-position:75% 0;
-}
-
-.download {
-    background-position:91% 0;
-}
-
-.tag {
-    background-position:83% 0;
-}
-
-.comment {
-    background-position:101% 0;
-	width:20px;
-}
-
-.links {
-    background-position:50% .3em;
-}
-
-.date-icon-add {
-    padding:0 22px;
 }
 
 .related-links {
