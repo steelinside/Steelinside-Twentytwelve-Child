@@ -131,7 +131,7 @@ function twentytwelve_entry_meta() {
 		esc_html( get_the_date() )
 	);
 
-	// 1 — это раздел, 2 — это тэг, 3 — это дата и 4 — автор.
+	// 1 — это раздел, 2 — это тэг, 3 — это дата и 4 — автор.
 	// Иконка комментариев прячется в content.php
 	if ( $tag_list ) {
 		$utility_text = __( '
@@ -154,8 +154,7 @@ add_image_size( 'yarpp-thumbnail', 230, 153, true );
 
 /*Регистрируем социальные кнопки*/
 add_action('social_buttons' , '' , 25);
-function social_buttons(){
-	echo '
+function social_buttons(){ ?>
 	<!--Социальные кнопки-->
 	<div class="social">
 		<!--VK-->
@@ -166,7 +165,7 @@ function social_buttons(){
 		<a class="twitter share" href="http://twitter.com/home?status=Читаю: <?php the_permalink(); ?>" title="Затвитить!"><span class = "icon-twitter"></span>&nbsp;Twitter</a>
 		<!--Google Plus-->
 		<a class="google-plus share" href="https://plus.google.com/share?url=<?php the_permalink(); ?>"><span class = "icon-google-plus2"></span>&nbsp;Google+</a>
-	</div>';
+	</div><?php;
 }
 
 /*-------------------------------- ПРОЧЕЕ ------------------------------*/
