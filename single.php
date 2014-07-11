@@ -15,7 +15,16 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php get_template_part( 'content', get_post_format() ); ?>
-				<?php social_buttons();?>
+				<div class="social">
+				<!--VK-->
+				<a class = "vk share" href = "https://vk.com/share.php?url=<?php the_permalink();?>&title=<?php the_title(); ?>&" title="ВКонтакте"><span class = "icon-vk2"></span>&nbsp;ВКонтакте</a>
+				<!--Facebook-->
+				<a class="facebook share" href="http://www.facebook.com/sharer.php?u=<?php the_permalink();?>&amp;t=<?php the_title(); ?>" title="Поделиться на Фейсбуке"><span class = "icon-facebook"></span>&nbsp;Facebook</a>						
+				<!--Twitter-->
+				<a class="twitter share" href="http://twitter.com/home?status=Читаю: <?php the_permalink(); ?>" title="Затвитить!"><span class = "icon-twitter"></span>&nbsp;Twitter</a>
+				<!--Google Plus-->
+				<a class="google-plus share" href="https://plus.google.com/share?url=<?php the_permalink(); ?>"><span class = "icon-google-plus2"></span>&nbsp;Google+</a>
+				</div>
 				<div class = "st_related_posts">
 					<?php related_posts();?>
 				</div>
