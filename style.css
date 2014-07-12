@@ -1593,10 +1593,10 @@ footer.entry-meta,footer.entry-meta a {
     background-image: url('images/arrow.svg');
 	background-size: auto 37px;
 	cursor:ponter;
-	-moz-transform: rotate(180deg); /* Для Firefox */
-    -ms-transform: rotate(180deg); /* Для IE */
-    -webkit-transform: rotate(180deg); /* Для Safari, Chrome, iOS */
-    -o-transform: rotate(180deg); /* Для Opera */
+	-moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
     transform: rotate(180deg);
 }
 
@@ -1675,6 +1675,17 @@ footer.entry-meta,footer.entry-meta a {
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'steelinside';
+	src:url('fonts/steelinside.eot?x4i5ey');
+	src:url('fonts/steelinside.eot?#iefixx4i5ey') format('embedded-opentype'),
+		url('fonts/steelinside.woff?x4i5ey') format('woff'),
+		url('fonts/steelinside.ttf?x4i5ey') format('truetype'),
+		url('fonts/steelinside.svg?x4i5ey#steelinside') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 [class^="icon-"], [class*=" icon-"] {
 	font-family: 'steelinside';
 	speak: none;
@@ -1689,74 +1700,14 @@ footer.entry-meta,footer.entry-meta a {
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.icon-envelope-o:before {
-	content: "\f004";
-}
-.icon-clock-o:before {
-	content: "\f018";
-}
-.icon-arrow-circle-o-down:before {
-	content: "\f01c";
-}
-.icon-arrow-circle-o-up:before {
-	content: "\f01d";
-}
-.icon-tag:before {
-	content: "\f02c";
-}
-.icon-asterisk:before {
-	content: "\f06b";
-}
-.icon-facebook-square:before {
-	content: "\f083";
-}
-.icon-twitter:before {
-	content: "\f099";
-}
-.icon-facebook:before {
-	content: "\f09a";
-}
-.icon-rss:before {
-	content: "\f09e";
-}
-.icon-google-plus-square:before {
-	content: "\f0d6";
-}
-.icon-google-plus:before {
-	content: "\f0d7";
-}
-.icon-comment-o:before {
-	content: "\f0e6";
-}
-.icon-rss-square:before {
-	content: "\f144";
-}
-.icon-vk:before {
-	content: "\f18a";
-}
-.icon-envelope-square:before {
-	content: "\f199";
-}
 .icon-envelope-o2:before {
 	content: "\f003";
 }
 .icon-clock-o2:before {
 	content: "\f017";
 }
-.icon-arrow-circle-o-down2:before {
-	content: "\f01a";
-}
-.icon-arrow-circle-o-up2:before {
-	content: "\f01b";
-}
 .icon-tag2:before {
 	content: "\f02b";
-}
-.icon-asterisk2:before {
-	content: "\f069";
-}
-.icon-exclamation-circle:before {
-	content: "\f06a";
 }
 .icon-facebook-square2:before {
 	content: "\f082";
@@ -1766,12 +1717,6 @@ footer.entry-meta,footer.entry-meta a {
 }
 .icon-google-plus-square2:before {
 	content: "\f0d4";
-}
-.icon-google-plus2:before {
-	content: "\f0d5";
-}
-.icon-envelope:before {
-	content: "\f0e0";
 }
 .icon-comment-o2:before {
 	content: "\f0e5";
@@ -1785,7 +1730,15 @@ footer.entry-meta,footer.entry-meta a {
 .icon-vk2:before {
 	content: "\f189";
 }
-
+.icon-rss:before {
+	content: "\f09e";
+}
+.icon-vk:before {
+	content: "\f18a";
+}
+.icon-envelope-square:before {
+	content: "\f199";
+}
 
 /*Классы для увеличения иконок*/
 .big{
